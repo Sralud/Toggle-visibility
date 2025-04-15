@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .info-section {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 1.5rem;
+    border-left: 4px solid #3498db;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .info-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .info-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .info-section p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* State class for hiding the section */
+  .hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+  }  
